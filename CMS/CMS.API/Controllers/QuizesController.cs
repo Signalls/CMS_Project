@@ -1,10 +1,12 @@
-﻿using CMS.API.Services.ServicesInterface;
+﻿using CMS.API.Models;
+using CMS.API.Services.ServicesInterface;
+using CMS.DATA.Entities;
 using CMS.DATA.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/quiz")]
     [ApiController]
     public class QuizesController : ControllerBase
     {
@@ -15,89 +17,152 @@ namespace CMS.API.Controllers
             _quizesService = quizesService;
         }
 
-
-        [HttpPost("AddQuiz")]
-        public async Task<ActionResult> AddQuiz([FromBody] AddQuizDto addQuizDto)
+        [HttpGet("All")]
+        public async Task<ActionResult> GetAllQuiz()
         {
-            try
+                var result = await _quizesService.GetQuizAysnc();
+                if (result.StatusCode == 200)
+                {
+                    return Ok(result);
+                }
+                else if (result.StatusCode == 404)
+                {
+                    return NotFound(result);
+                }
+                else
+                {
+                    return BadRequest(result);
+                }
+            
+        }
+
+        [HttpGet("{quizId}")]
+        public async Task<ActionResult<Quiz>> GetQuizById(string quizId)
+        {
+          
+                var result = await _quizesService.GetQuizByIdAsync(quizId);
+
+                if (result.StatusCode == 200)
+                {
+                    return Ok(result);
+                }
+                else if (result.StatusCode == 404)
+                {
+                    return NotFound(result);
+                }
+                else
+                {
+                    return BadRequest(result);
+                }
+        }
+
+        [HttpGet("lesson/{lessonId}")]
+        public async Task<ActionResult<Quiz>> GetQuizByLessonId(string lessonId)
+        {
+           var result = await _quizesService.GetByLesson(lessonId);
+
+            if (result.StatusCode == 200)
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-                var addQuiz = await _quizesService.AddQuiz(addQuizDto);
-                if (addQuiz != null)
-                {
-                    return Ok(new
-                    {
-                        Message = "Quiz was added successfully"
-                    });
-                }
-                return StatusCode(StatusCodes.Status501NotImplemented, "No Quiz Added to Database");
+                return Ok(result);
             }
-            catch (Exception)
+            else if (result.StatusCode == 404)
             {
+                return NotFound(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
 
+        }
 
-                return StatusCode(StatusCodes.Status501NotImplemented, "Error");
+        [HttpGet("user/{userId}")]
+        public async Task<ActionResult<Quiz>> GetQuizByUserId(string userId)
+        {
+            
+             var result = await _quizesService.GetByUser(userId);
+            if (result.StatusCode == 200)
+            {
+                return Ok(result);
+            }
+            else if (result.StatusCode == 404)
+            {
+                return NotFound(result);
+            }
+            else
+            {
+                return BadRequest(result);
             }
 
         }
 
 
-        [HttpPatch("UpdateQuiz")]
-        public async Task<IActionResult> UpdateQuiz(string Id, [FromBody] UpdateDto updateDto)
+
+        [HttpPost("add")]
+        public async Task<ActionResult<ResponseDto<AddQuizDto>>> AddQuiz([FromBody] AddQuizDto addQuizDto)
         {
-
-            try
+            if (!ModelState.IsValid)
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-                var addQuiz = await _quizesService.UpdateQuiz(Id, updateDto);
-                if (addQuiz != null)
-                {
-                    return Ok(new
-                    {
-                        Message = "Quiz updated successfully"
-                    });
-                }
-                return StatusCode(StatusCodes.Status501NotImplemented, "Quiz has update is not successful");
+                return BadRequest(ModelState);
             }
-            catch (Exception)
+            var addQuiz = await _quizesService.AddQuiz(addQuizDto);
+            if (addQuiz.StatusCode == 200)
             {
-
-
-                return StatusCode(StatusCodes.Status501NotImplemented, "Error");
+                return Ok(addQuiz);
+            }
+            else if (addQuiz.StatusCode == 400)
+            {
+                return NotFound(addQuiz);
+            }
+            else
+            {
+                return BadRequest(addQuiz);
             }
         }
 
-        [HttpDelete("DeleteQuiz")]
-        public async Task<ActionResult> DeleteQuiz(string Id)
+
+        [HttpPatch("{quizId}/update")]
+        public async Task<ActionResult<ResponseDto<AddQuizDto>>> UpdateQuiz(string quizId, [FromBody] UpdateDto updateDto)
         {
-            try
+            if (!ModelState.IsValid)
             {
-
-                var DeleteQuiz = await _quizesService.DeleteQuiz(Id);
-
-
-                if (DeleteQuiz)
-                {
-                    return Ok($"{DeleteQuiz} has been deleted");
-
-                }
-
-                return NotFound("Failed to delete Quiz");
-
+                return BadRequest(ModelState);
+            }
+            var updateQuiz = await _quizesService.UpdateQuiz(quizId, updateDto);
+            if (updateQuiz.StatusCode == 200)
+            {
+                return Ok(updateQuiz);
+            }
+            else if (updateQuiz.StatusCode == 400)
+            {
+                return NotFound(updateQuiz);
 
             }
-            catch (Exception)
+            else
             {
-
-                return StatusCode(StatusCodes.Status501NotImplemented, "Error");
+                return BadRequest(updateQuiz);
             }
+        }
 
+        [HttpDelete("{quizId}/delete")]
+        public async Task<ActionResult<ResponseDto<bool>>> DeleteQuiz(string quizId)
+        {
+
+            var DeleteQuiz = await _quizesService.DeleteQuiz(quizId);
+
+            if (DeleteQuiz.StatusCode == 200)
+            {
+                return Ok(DeleteQuiz);
+            }
+            else if (DeleteQuiz.StatusCode == 400)
+            {
+                return NotFound(DeleteQuiz);
+
+            }
+            else
+            {
+                return BadRequest(DeleteQuiz);
+            }
 
         }
     }

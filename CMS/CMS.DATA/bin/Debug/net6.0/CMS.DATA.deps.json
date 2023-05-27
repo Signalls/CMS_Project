@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "CMS.DATA/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.1",
@@ -16,6 +17,17 @@
         },
         "runtime": {
           "CMS.DATA.dll": {}
+        }
+      },
+      "AutoMapper/12.0.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.0"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -80,6 +92,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.EntityFrameworkCore/6.0.1": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "6.0.1",
@@ -317,6 +330,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "path": "automapper/12.0.1",
+      "hashPath": "automapper.12.0.1.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -358,6 +378,13 @@
       "sha512": "sha512-FklKd0TXUaYExsSLte5k6w2krmHgUrGtbxX+vS4YEOx9yyP3DWYld0TPUplkPbyM/iNv7ou1xK63Yg+tQAiRNA==",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/6.0.1",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.6.0.1.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/6.0.1": {
       "type": "package",

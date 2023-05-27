@@ -8,7 +8,6 @@
         public string LessonId { get; set; }
 
         public string Instruction { get; set; }
-        public DateTime? DateUpdated { get; set; }
         public bool IsDeleted { get; set; }
     }
 }

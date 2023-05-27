@@ -14,6 +14,35 @@ namespace CMS.DATA.Repository.Implementation
             _context = context;
         }
 
+        public async Task<IEnumerable<Quiz>> GetAllQuizAsync()
+        {
+            return await _context.Quizs.ToListAsync();
+        }
+
+        public async Task<Quiz> GetQuizByIdAsync(string quizId)
+        {
+            return await _context.Quizs.FirstOrDefaultAsync(e => e.Id == quizId);
+        }
+   
+
+        public async Task<IEnumerable<Quiz>> GetQuizByLessonAsync(string lessonId)
+        {
+            var lesson = await _context.Lessons.FindAsync(lessonId);
+            if (lesson == null)
+                throw new Exception("Lesson does not exist");
+
+            return await _context.Quizs.Where(x => x.LessonId == lessonId).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Quiz>> GetQuizByUserAsync(string userId)
+        {
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+                throw new Exception("User does not exist");
+
+            return await _context.Quizs.Where(x => x.AddedById == userId).ToListAsync();
+        }
+
         public async Task<Quiz> AddQuiz(Quiz entity)
         {
             if (entity == null)
@@ -27,23 +56,20 @@ namespace CMS.DATA.Repository.Implementation
 
             return null;
         }
-
-
-
-        public async Task<bool> DeleteQuizAsync(Quiz entity)
+        
+        public async Task<Quiz> DeleteQuizAsync(Quiz entity)
         {
             _context.Quizs.Remove(entity);
             var status = await _context.SaveChangesAsync();
 
             if (status > 0)
-                return true;
+                return entity;
 
-            return false;
+            return null;
         }
 
         public async Task<Quiz> UpdateQuiz(Quiz entity)
         {
-
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
             _context.Quizs.Update(entity);
@@ -54,17 +80,6 @@ namespace CMS.DATA.Repository.Implementation
 
             return null;
         }
-        public async Task<Quiz> GetQuizById(string Id)
-        {
-
-
-            var result = await _context.Quizs.FirstOrDefaultAsync(b => b.Id == Id);
-            if (result == null)
-            {
-                throw new Exception("Quiz not available");
-            }
-
-            return result;
-        }
+        
     }
 }
