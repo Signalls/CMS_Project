@@ -1,14 +1,14 @@
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.deps.json
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.runtimeconfig.json
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.dll
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.pdb
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.csproj.AssemblyReference.cache
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.AssemblyInfoInputs.cache
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.AssemblyInfo.cs
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.csproj.CoreCompileInputs.cache
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.dll
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\refint\CMS.DATA.dll
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.pdb
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.genruntimeconfig.cache
-C:\Users\johnn\OneDrive\Desktop\WebAPI\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\ref\CMS.DATA.dll
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.deps.json
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.runtimeconfig.json
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.dll
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\bin\Debug\net6.0\CMS.DATA.pdb
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.csproj.AssemblyReference.cache
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.AssemblyInfoInputs.cache
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.AssemblyInfo.cs
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.csproj.CoreCompileInputs.cache
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.dll
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\refint\CMS.DATA.dll
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.pdb
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\CMS.DATA.genruntimeconfig.cache
+C:\Users\johnn\OneDrive\Desktop\WebAPI\New folder (2)\NewClone\curriculum-management-system\CMS\CMS.DATA\obj\Debug\net6.0\ref\CMS.DATA.dll

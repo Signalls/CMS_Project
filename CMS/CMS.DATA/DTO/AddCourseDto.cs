@@ -4,6 +4,10 @@
     {
         public string Name { get; set; }
 
-        public string AddedBy { get; set; }
+        public string UserId { get; set; }
+
+        public bool IsCompleted { get; set; }
+
+
     }
 }

@@ -655,6 +655,56 @@
           }
         }
       },
+      "NLog/5.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "NLog": "5.1.3"
+        },
+        "compile": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "NLog.Extensions.Logging": "5.2.3"
+        },
+        "compile": {
+          "lib/net6.0/NLog.Web.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Web.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Npgsql/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -1888,6 +1938,77 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
+    "NLog/5.1.3": {
+      "sha512": "rB8hwjBf1EZCfG5iPfsv3gPksLoJLr1cOrt7PBbJu6VpJgwYJchDzTUT1dhNDdPv0QakXJQJOhE59ErupcznQQ==",
+      "type": "package",
+      "path": "nlog/5.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.1.3.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.Extensions.Logging/5.2.3": {
+      "sha512": "TB8zPGV2nVpvWq5C8zIVHPSmnzOHMrXppjsAwHcuJq1Ehs8sC0llnAv5Ysf5Lf/vew9amV/+01MohtRFSDzKdQ==",
+      "type": "package",
+      "path": "nlog.extensions.logging/5.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net461/NLog.Extensions.Logging.dll",
+        "lib/net461/NLog.Extensions.Logging.xml",
+        "lib/net6.0/NLog.Extensions.Logging.dll",
+        "lib/net6.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.3/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.3/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.5/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.5/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.0/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.1/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.1/NLog.Extensions.Logging.xml",
+        "nlog.extensions.logging.5.2.3.nupkg.sha512",
+        "nlog.extensions.logging.nuspec"
+      ]
+    },
+    "NLog.Web.AspNetCore/5.2.3": {
+      "sha512": "uP0KekbkswuMjo1dbaqu20TxH2Dc3ox2qJDIi837ob2Fq/BliZHuQY9nJdM3UArVrLrsl+xxsx0D6h8m3fOufg==",
+      "type": "package",
+      "path": "nlog.web.aspnetcore/5.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "README.md",
+        "lib/net461/NLog.Web.AspNetCore.dll",
+        "lib/net461/NLog.Web.AspNetCore.xml",
+        "lib/net5.0/NLog.Web.AspNetCore.dll",
+        "lib/net5.0/NLog.Web.AspNetCore.xml",
+        "lib/net6.0/NLog.Web.AspNetCore.dll",
+        "lib/net6.0/NLog.Web.AspNetCore.xml",
+        "lib/netcoreapp3.1/NLog.Web.AspNetCore.dll",
+        "lib/netcoreapp3.1/NLog.Web.AspNetCore.xml",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.dll",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.xml",
+        "nlog.web.aspnetcore.5.2.3.nupkg.sha512",
+        "nlog.web.aspnetcore.nuspec"
+      ]
+    },
     "Npgsql/6.0.1": {
       "sha512": "T0v1fSBzcQaJoa6kHGiYYi/vwTJ5VYd8DDjCxW1jazAuO2Ak1KVWMkEcQxxz/C+H/+QteJRMi/xAVHzv1kKSgg==",
       "type": "package",
@@ -2326,6 +2447,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.0",
       "MimeKit >= 4.0.0",
+      "NLog.Web.AspNetCore >= 5.2.3",
       "Serilog >= 2.12.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -2337,11 +2459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
+      "projectUniqueName": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
       "projectName": "CMS.API",
-      "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
+      "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
       "packagesPath": "C:\\Users\\johnn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\obj\\",
+      "outputPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2362,8 +2484,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj": {
-              "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj"
+            "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj": {
+              "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj"
             }
           }
         }
@@ -2411,6 +2533,10 @@
           "MimeKit": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "NLog.Web.AspNetCore": {
+            "target": "Package",
+            "version": "[5.2.3, )"
           },
           "Serilog": {
             "target": "Package",

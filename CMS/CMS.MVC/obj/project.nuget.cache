@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B2p5ON1nGx8GMfl1e/Q4jWncPCJESqIMvVtagFvZxclC1Qf+UNrLMEztxqZKR1vndnZEcFUe4hQzixWa8NwH0w==",
+  "dgSpecHash": "3dX6LbV6onJoVKxYJTqU/+0YF7lv+j70wWSY0ble07O9dMTh2uT8moSlmj8Lay0JWWgiRqZQg9QsiES5SEIj3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.MVC\\CMS.MVC.csproj",
+  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.MVC\\CMS.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnn\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.1\\microsoft.aspnetcore.cryptography.internal.6.0.1.nupkg.sha512",

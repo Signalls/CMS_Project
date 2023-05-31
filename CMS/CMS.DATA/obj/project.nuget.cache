@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ciPdeHoCQk+Wc4WfIc1GcfE5siTqbLQZmELugzI1KBk9Bg9jPEVmyx7x3Vz/F6bBN2C9FY5onjZAmODJUwOydA==",
+  "dgSpecHash": "JLD9hDAjFSaodVNabEZEGBncGpCsNIawaZE5q8fKpJL5VewCR9Ra5ma8ObS9+9JIODmMJbYMWiSU2GIf1S22PQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj",
+  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnn\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

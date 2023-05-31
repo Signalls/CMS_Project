@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj": {}
+    "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj": {
+    "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
+        "projectUniqueName": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
         "projectName": "CMS.API",
-        "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
+        "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\CMS.API.csproj",
         "packagesPath": "C:\\Users\\johnn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.API\\obj\\",
+        "outputPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj": {
-                "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj"
+              "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj": {
+                "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj"
               }
             }
           }
@@ -82,6 +82,10 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
             "Serilog": {
               "target": "Package",
               "version": "[2.12.0, )"
@@ -114,14 +118,14 @@
         }
       }
     },
-    "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj": {
+    "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj",
+        "projectUniqueName": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj",
         "projectName": "CMS.DATA",
-        "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj",
+        "projectPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\CMS.DATA.csproj",
         "packagesPath": "C:\\Users\\johnn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\curriculum-management-system\\CMS\\CMS.DATA\\obj\\",
+        "outputPath": "C:\\Users\\johnn\\OneDrive\\Desktop\\WebAPI\\New folder (2)\\NewClone\\curriculum-management-system\\CMS\\CMS.DATA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
